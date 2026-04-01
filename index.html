@@ -7,84 +7,128 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="header">
         <img src="images/bio/bio.jpg" alt="Yimo Shen" class="bio-pic">
         <h1>Yimo Shen</h1>
     </div>
     <p>Software Engineer with a passion for building intelligent systems and scalable solutions.</p>
 
-    <h2>About Me</h2>
-    <p>I am a software engineer with experience in AI/ML, cloud computing, and system design. I am passionate about using technology to solve complex problems and build innovative products. When I'm not coding, I enjoy exploring new technologies, spending time with my cat, and traveling.</p>
+    <div id="about">
+        <h2>About Me</h2>
+        <p>I am a software engineer with experience in AI/ML, cloud computing, and system design. I am passionate about using technology to solve complex problems and build innovative products. When I'm not coding, I enjoy exploring new technologies, spending time with my cat, and traveling.</p>
+    </div>
 
-    <h2>Interests & Hobbies</h2>
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="images/hobbies/cat.jpg" alt="My Cat">
-            <p>My cat, who is the best coding companion.</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/hobbies/hobby.jpg" alt="A hobby">
-            <p>One of my hobbies.</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/interests/interest.jpg" alt="An interest">
-            <p>Something I'm interested in.</p>
+    <div id="interests">
+        <h2>Interests & Hobbies</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/hobbies/tennis.jpg" alt="Tennis">
+                <p>Tennis (4.0)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/hobbies/watches.jpg" alt="Watch Collecting">
+                <p>Vintage Watch Collecting</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/hobbies/golf.jpg" alt="Golfing">
+                <p>Golf (9 Handicap)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/hobbies/skiing.jpg" alt="Skiing">
+                <p>Skiing</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/hobbies/travel.jpg" alt="Traveling">
+                <p>Traveling</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/hobbies/reading.jpg" alt="Reading">
+                <p>Reading (Sci-fi, History)</p>
+            </div>
         </div>
     </div>
 
-    <h2>SKILLS</h2>
-    <p><strong>Programming Languages:</strong> Python, SQL, Java, JavaScript/TypeScript, C++</p>
-    <p><strong>AI / ML:</strong> Retrieval-Augmented Generation (RAG), LLM Routing & Guardrails, PyTorch, TensorFlow, Vector Search</p>
-    <p><strong>Cloud:</strong> AWS (Lambda, SQS, Glue, Redshift, Bedrock, OpenSearch), Serverless Computing, Event-Driven Architecture</p>
-    <p><strong>DevOps & Tools:</strong> Git, CI/CD, SDLC, Version Control, Code Reviews, AI-Assisted Development (Claude, Cursor)</p>
-    <p><strong>System Design:</strong> Fault-Tolerant Design (DLQs, Retry), Distributed Systems, Multi-Tenant Platforms, Message Queues</p>
-    <p><strong>Databases:</strong> PostgreSQL, DynamoDB, Vector Databases, Relational Schema Modeling</p>
+    <div id="skills">
+        <h2>SKILLS</h2>
+        <p><strong>Programming Languages:</strong> Python, SQL, Java, JavaScript/TypeScript, C++</p>
+        <p><strong>AI / ML:</strong> Retrieval-Augmented Generation (RAG), LLM Routing & Guardrails, PyTorch, TensorFlow, Vector Search</p>
+        <p><strong>Cloud:</strong> AWS (Lambda, SQS, Glue, Redshift, Bedrock, OpenSearch), Serverless Computing, Event-Driven Architecture</p>
+        <p><strong>DevOps & Tools:</strong> Git, CI/CD, SDLC, Version Control, Code Reviews, AI-Assisted Development (Claude, Cursor)</p>
+        <p><strong>System Design:</strong> Fault-Tolerant Design (DLQs, Retry), Distributed Systems, Multi-Tenant Platforms, Message Queues</p>
+        <p><strong>Databases:</strong> PostgreSQL, DynamoDB, Vector Databases, Relational Schema Modeling</p>
+    </div>
 
-    <h2>PROFESSIONAL EXPERIENCE</h2>
-    <h3>Meta</h3>
-    <p><em>Software Engineer, AI Runtime Wearables</em> | Present</p>
-    
-    <h3>Deloitte</h3>
-    <p><em>Software Engineer</em> | New York, NY | August 2023 – Present</p>
-    <ul>
-        <li>Rapid-prototyped an agentic LLM routing layer for an enterprise chatbot through dynamic tool-calling and RAG to autonomously execute complex, multi-step client workflows, resolving 85% of complex client queries.</li>
-        <li>Led end-to-end development and deployment of a distributed, event-driven system on AWS to determine medical insurance eligibility, replacing a synchronous manual workflow with a highly scalable, fault-tolerant serverless solution.</li>
-        <li>Built the intelligent document extraction layer using OCR and Vision-Language Models (VLMs), implementing parallel processing patterns to ingest complex unstructured data from PDF and XML files.</li>
-        <li>Designed the fault-tolerant ingestion pipeline utilizing AWS SQS for load leveling and Lambda for concurrent processing, implementing exponential backoff retry policies and Dead Letter Queues (DLQ) to resolve transient failures.</li>
-        <li>Engineered state validation logic to ensure atomic processing of correlated PDF-XML datasets, preventing data races and reducing end-to-end processing latency from 14 days to under 20 minutes for 100,000+ files.</li>
-    </ul>
+    <div id="experience">
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+        <h3>Meta</h3>
+        <p><em>Software Engineer, AI Runtime Wearables</em> | Present</p>
+        
+        <h3>Deloitte</h3>
+        <p><em>Software Engineer</em> | New York, NY | August 2023 – Present</p>
+        <ul>
+            <li>Rapid-prototyped an agentic LLM routing layer for an enterprise chatbot through dynamic tool-calling and RAG to autonomously execute complex, multi-step client workflows, resolving 85% of complex client queries.</li>
+            <li>Led end-to-end development and deployment of a distributed, event-driven system on AWS to determine medical insurance eligibility, replacing a synchronous manual workflow with a highly scalable, fault-tolerant serverless solution.</li>
+            <li>Built the intelligent document extraction layer using OCR and Vision-Language Models (VLMs), implementing parallel processing patterns to ingest complex unstructured data from PDF and XML files.</li>
+            <li>Designed the fault-tolerant ingestion pipeline utilizing AWS SQS for load leveling and Lambda for concurrent processing, implementing exponential backoff retry policies and Dead Letter Queues (DLQ) to resolve transient failures.</li>
+            <li>Engineered state validation logic to ensure atomic processing of correlated PDF-XML datasets, preventing data races and reducing end-to-end processing latency from 14 days to under 20 minutes for 100,000+ files.</li>
+        </ul>
 
-    <h3>Silver Lake Partners</h3>
-    <p><em>Data Scientist Intern</em> | Menlo Park, CA | June 2022 – September 2022</p>
-    <ul>
-        <li>Architected and deployed a serverless ETL pipeline on AWS (Lambda, Glue, Redshift) that migrated from a manual, error-prone Excel reporting system to an automated dashboard, achieving 90%+ improvement in data refresh speed.</li>
-        <li>Leveraged NLP using Python libraries (NLTK, spaCy) to extract insights from unstructured data (news articles, social media reports) to conduct market due diligence and sentiment analysis.</li>
-    </ul>
+        <h3>Silver Lake Partners</h3>
+        <p><em>Data Scientist Intern</em> | Menlo Park, CA | June 2022 – September 2022</p>
+        <ul>
+            <li>Architected and deployed a serverless ETL pipeline on AWS (Lambda, Glue, Redshift) that migrated from a manual, error-prone Excel reporting system to an automated dashboard, achieving 90%+ improvement in data refresh speed.</li>
+            <li>Leveraged NLP using Python libraries (NLTK, spaCy) to extract insights from unstructured data (news articles, social media reports) to conduct market due diligence and sentiment analysis.</li>
+        </ul>
 
-    <h3>University of Washington</h3>
-    <p><em>Data Analyst</em> | Seattle, WA | July 2021 – July 2023</p>
-    <ul>
-        <li>Redesigned databases using Microsoft SQL Server to cater to specific university data requirements.</li>
-        <li>Created complex custom SQL queries & ETL pipelines, increasing retrieval efficiency by 20%.</li>
-    </ul>
+        <h3>University of Washington</h3>
+        <p><em>Data Analyst</em> | Seattle, WA | July 2021 – July 2023</p>
+        <ul>
+            <li>Redesigned databases using Microsoft SQL Server to cater to specific university data requirements.</li>
+            <li>Created complex custom SQL queries & ETL pipelines, increasing retrieval efficiency by 20%.</li>
+        </ul>
+    </div>
 
-    <h2>PROJECTS</h2>
-    <h3>Intelligent Staffing Platform</h3>
-    <ul>
-        <li>Took 3rd Place at Deloitte 2024 AWS Innovation Hackathon for developing a dual-sided matching platform that utilizes LLMs and Vector Embeddings to rank internal project postings for candidates and internal candidate resumes for hiring managers via real-time semantic scoring.</li>
-        <li>Engineered a high-performance search pipeline using OpenAI text-embedding-3-small and Pinecone vector database, enabling sub-second Cosine Similarity calculations to move beyond keyword matching toward contextual alignment.</li>
-        <li>Built a robust extraction pipeline to transform unstructured PDFs into structured JSON data, integrating a match justification module that leverages GPT-4 to provide transparent, natural-language reasoning for every score generated.</li>
-    </ul>
+    <div id="projects">
+        <h2>PROJECTS</h2>
+        <div class="project">
+            <h3>Intelligent Staffing Platform</h3>
+            <p>Took 3rd Place at Deloitte 2024 AWS Innovation Hackathon for developing a dual-sided matching platform that utilizes LLMs and Vector Embeddings to rank internal project postings for candidates and internal candidate resumes for hiring managers via real-time semantic scoring.</p>
+            <p><strong>Technologies:</strong> OpenAI, Pinecone, GPT-4</p>
+            <p><a href="#">View on GitHub</a></p>
+        </div>
+        <div class="project">
+.
+            <h3>Awards Travel Optimization Platform</h3>
+            <p>Engineered an end-to-end data ingestion and processing pipeline that scrapes, cleans, and normalizes unstructured travel rewards data from sources including ThePointsGuy and Reddit communities.</p>
+            <p><strong>Technologies:</strong> RAG, Vector Databases, LLMs</p>
+            <p><a href="#">View on GitHub</a></p>
+        </div>
+    </div>
 
-    <h3>Awards Travel Optimization Platform</h3>
-    <ul>
-        <li>Engineered an end-to-end data ingestion and processing pipeline that scrapes, cleans, and normalizes unstructured travel rewards data from sources including ThePointsGuy and Reddit communities.</li>
-        <li>Developed a Retrieval-Augmented Generation (RAG) system leveraging transformer-based embeddings indexed in vector databases combined with LLMs for contextual, personalized travel rewards Q&A and recommendations.</li>
-    </ul>
+    <div id="education">
+        <h2>EDUCATION</h2>
+        <h3>University of Washington</h3>
+        <p><em>Bachelor of Science in Applied and Computational Mathematics</em> | Seattle, WA | September 2019 – June 2023</p>
+        <p><strong>Relevant Courses:</strong> Data Structures & Algorithms, System Design, Machine Learning, Artificial Intelligence, Linear & Nonlinear Optimization, Statistics & Probability, Bayesian Inference, Stochastic Analysis, Differential Equations</p>
+    </div>
 
-    <h2>EDUCATION</h2>
-    <h3>University of Washington</h3>
-    <p><em>Bachelor of Science in Applied and Computational Mathematics</em> | Seattle, WA | September 2019 – June 2023</p>
-    <p><strong>Relevant Courses:</strong> Data Structures & Algorithms, System Design, Machine Learning, Artificial Intelligence, Linear & Nonlinear Optimization, Statistics & Probability, Bayesian Inference, Stochastic Analysis, Differential Equations</p>
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:yimoshen2000@gmail.com">yimoshen2000@gmail.com</a></li>
+            <li><strong>Phone:</strong> (253) 905-4181</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/yimoshen2000" target="_blank">yimoshen2000</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yimo-shen" target="_blank">yimo-shen</a></li>
+        </ul>
+    </div>
 </body>
 </html>
