@@ -8,13 +8,29 @@ body {
     background-color: #fdfdfd;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.bio-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
 h1, h2, h3 {
     color: #2c3e50;
     margin-top: 2.5rem;
 }
 
 h1 {
-    text-align: center;
     border-bottom: 2px solid #3498db;
     padding-bottom: 10px;
     margin-top: 1rem;
@@ -44,4 +60,34 @@ a:hover {
 
 p {
     margin-bottom: 1em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 0.5em;
+    font-style: italic;
+    color: #555;
 }
