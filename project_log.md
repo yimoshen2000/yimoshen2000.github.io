@@ -13,3 +13,13 @@ This log will be used to track the conversation and progress of the personal web
     *   **Icons:** Resize and move social media icons to the bottom of the left column.
     *   **Content:** Replace experience and project descriptions with placeholder text and remove the education section.
     *   **Theme:** Keep the white and light blue theme.
+
+## 2026-04-03
+
+*   **User Feedback & Implementation:**
+    *   **Layout:**
+        *   Removed the "Contact" section from the right column.
+        *   Shifted the content within the left column slightly to the right.
+        *   Moved social media icons to the bottom of the left column.
+    *   **Icons:**
+        *   Added an Instagram icon and link.
